@@ -1,0 +1,45 @@
+.font-fusion-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .slider-container {
+    position: relative;
+    /* width: 400px;
+    height: 420px; Adjust the height as needed */
+    overflow: hidden;
+  }
+  
+  .slide {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 0.5s;
+    position: absolute;
+  }
+  
+  .slide.active {
+    opacity: 1;
+  }
+  
+  .slider-buttons {
+    margin-top: 20px;
+  }
+  
+  .slider-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px 10px;
+    margin: 0 5px;
+  }
+  
+  .slider-button.active {
+    /* font-weight: bold; */
+    color: #D55377;
+  }
+  

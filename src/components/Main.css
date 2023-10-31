@@ -1,0 +1,54 @@
+.wall4all-bg {
+  background-image: url(../assets/img/wall4all-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home-bg{
+  background-image: url(../assets/img/homebg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+
+
+li a {
+  color: #3d3636d2 !important;
+  transition: color 0.3s !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  line-height: 24px;
+  outline: none;
+}
+
+li a:hover {
+  color: #000000e0 !important;
+}
+
+li a.active {
+  color: #000 !important;
+  border-bottom: #000000ca 2px solid !important;
+}
+
+.no-focuse:focus{
+  outline: none;
+}
+
+/* CSS for a smoother image transition */
+.img-transition {
+  opacity: 1;
+  transform: scale(1);
+  filter: blur(0);
+
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out,
+    filter 0.5s ease-in-out;
+}
+
+.img-hidden {
+  opacity: 0;
+  transform: scale(0.95);
+
+  filter: blur(1px);
+
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out,
+    filter 0.5s ease-in-out;
+}
